@@ -44,7 +44,7 @@ switch (a) {
 //2.1 Если переменная равна “hidden”, присвоить ей значение “visible”, иначе - “hidden”.
 
 let hiddenVar = 'hidden';
-hiddenVar === 'hidden' ? hiddenVar = 'visible' : hiddenVar = 'hidden';
+hiddenVar = hiddenVar === 'hidden' ? 'visible' : 'hidden';
 console.log(hiddenVar);
 
 
