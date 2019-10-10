@@ -12,7 +12,7 @@
 // Подсказка: secondFunc должна быть представлена функцией, которая принимает
 // один аргумент (каждый элемент массива) и возвращает результат его обработки
 
-function firstFunc(arr, fn) {
+function getNewValueFunc(arr, fn) {
     return 'New value: ' + fn(arr)
 }
 
@@ -47,10 +47,10 @@ function invertFunc(array) {
 }
 
 
-console.log(firstFunc(['my', 'name', 'is', 'Trinity'], stringFunc));
-console.log(firstFunc([10, 20, 30], numberFunc));
-console.log(firstFunc([{age: 45, name: 'Jhon'}, {age: 20, name: 'Aaron'}], userFunc));
-console.log(firstFunc(['abc', '123'], invertFunc));
+console.log(getNewValueFunc(['my', 'name', 'is', 'Trinity'], stringFunc));
+console.log(getNewValueFunc([10, 20, 30], numberFunc));
+console.log(getNewValueFunc([{age: 45, name: 'Jhon'}, {age: 20, name: 'Aaron'}], userFunc));
+console.log(getNewValueFunc(['abc', '123'], invertFunc));
 
 
 
