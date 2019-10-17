@@ -1,0 +1,101 @@
+body {
+    margin: 0 auto;
+    width: 1024px;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 18px;
+}
+
+.mainText {
+    color: #fe802d;
+    padding: 15px 15px;
+}
+
+ul {
+    list-style: none;
+    margin: 25px 0;
+    padding: 0 15px;
+}
+
+li {
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: rebeccapurple;
+}
+
+.mainList {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.secondPage {
+    padding: 40px 0;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.homePage {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.homePage span {
+    padding: 10px 0;
+}
+
+.someLink {
+    padding: 0 30px;
+}
+
+input {
+    border: 1px solid black;
+    width: 300px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 2px;
+    background-color: transparent;
+}
+
+.form {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom {
+    margin-bottom: 10px;
+}
+
+.inputCheck {
+    margin: 0 10px 0 0;
+    width: 15px;
+    height: 15px;
+}
+
+.check {
+    padding: 10px 0;
+}
+
+button {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    background-color: #21ace3;
+    border: none;
+    color: black;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #005580;
+    color: #fff;
+}
