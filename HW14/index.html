@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <h1>Whack a mole! <span class="score">0</span></h1>
+    <div class="menu">
+        <label for="">
+            Введите имя
+            <input type="text" id="name">
+            <span class="error">Введите имя</span>
+        </label>
+        <select name="level" id="level" class="select-level">
+            <option value="light">Легкий</option>
+            <option value="medium">Средний</option>
+            <option value="hard">Сложный</option>
+        </select>
+        <button class="start">Start Game</button>
+    </div>
+
+    <div class="game">
+        <div class="hole hole1">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole2">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole3">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole4">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole5">
+            <div class="mole"></div>
+        </div>
+        <div class="hole hole6">
+            <div class="mole"></div>
+        </div>
+    </div>
+    <div class="popup"></div>
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Игра Окончена</h2>
+                    <a title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <h3>Показанных кротов: <span class="allShow"></span></h3>
+                    <h3>Пойманных кротов: <span class="allCatch"></span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal rate-list">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Rate</h2>
+                    <a title="Close" class="close-modal">×</a>
+                </div>
+                <div class="modal-body">
+                    <table class="rate">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rate-list">
+        <button class="rate-btn">Rate</button>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
