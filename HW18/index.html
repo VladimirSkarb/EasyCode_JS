@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="invoices">
+    <div class="container-title">
+        <h1>Invoices</h1>
+        <div class="line"></div>
+    </div>
+
+    <div class="wrapper section">
+        <div class="name"><span>Actions</span></div>
+        <button class="btn add_btn">Add new</button>
+    </div>
+    <div class="wrapper">
+        <div class="name"><span>Invoices</span></div>
+        <table class="table">
+        </table>
+    </div>
+
+    <div class="wrapper">
+        <div id="openModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title">Create Invoice</h2>
+                        <div class="line"></div>
+                        <a title="Close" class="close">×</a>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input_value">
+                            <div class="input">
+                                <div class="input_holder">
+                                    <label>Number:</label>
+                                    <input type="text" name="number">
+                                </div>
+                                <div class="input_holder">
+                                    <label>Invoice Date:</label>
+                                    <input type="date" name="invoice_date">
+                                </div>
+
+                            </div>
+                            <div class="input_holder">
+                                <label>Supply Date:</label>
+                                <input type="date" name="supply_date">
+                            </div>
+                            <div class="input_holder">
+                                <label>Comment:</label>
+                                <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                            </div>
+
+                        </div>
+                        <button class="btn save_btn">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
